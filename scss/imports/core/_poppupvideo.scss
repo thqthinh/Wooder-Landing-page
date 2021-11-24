@@ -1,0 +1,51 @@
+.popup-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  display: none;
+  .iframe_wrap {
+    position: relative;
+    width: 80vw;
+    max-width: 900px;
+    height: 0;
+    padding-bottom: 56.25%;
+    border: 3px solid #fff;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+    .close {
+      position: absolute;
+      top: -25px;
+      right: -25px;
+      border-radius: 100rem;
+      cursor: pointer;
+      font-size: 2rem;
+      width: 50px;
+      height: 50px;
+      background: $white-cl;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  // @include sm {
+  //   .iframe_wrap {
+  //     max-width: 600px;
+  //   }
+  // }
+  // @include xxs {
+  //   .iframe_wrap {
+  //     max-width: 510px;
+  //   }
+  // }
+}
